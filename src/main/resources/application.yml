@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    master:
+      # 驱动类
+      driver-class-name: com.mysql.jdbc.Driver
+      # 主数据库服务器用户名
+      username: root
+      # 主数据库服务器密码
+      password: root
+      # 主数据库服务器用户名，到时候更换自己的ip端口
+      jdbc-url: jdbc:mysql://192.168.169.133:3306/test?characterEncoding=utf-8
+      # 从数据库服务器配置
+    slave:
+      # 从数据库服务器用户名
+      username: root
+      # 从数据库服务器密码
+      password: root
+      # 从数据库服务器url,到时候更换自己的ip端口
+      jdbc-url: jdbc:mysql://192.168.169.133:33306/test?characterEncoding=utf-8
+
+
+logging:
+  level:
+    com.readwite.application: debug
